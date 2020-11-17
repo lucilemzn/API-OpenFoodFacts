@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "APIProject"
+    }
+  },
+  "defaultProject": "APIProject",
+  "cli": {
+    "analytics": false
+  }
 }
