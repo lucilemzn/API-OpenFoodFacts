@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {​​​​​ Router }​​​​​ from '@angular/router';
+import { ItemMenu } from '../classes/item-menu';
 
 
 @Component({
@@ -10,8 +11,16 @@ import {​​​​​ Router }​​​​​ from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   constructor(private router: Router) { }
+  itemsMenu = new Array<ItemMenu>();
 
   ngOnInit(): void {
+
+    this.itemsMenu.push(new ItemMenu('Accueil', '/', false));
+    this.itemsMenu.push(new ItemMenu('Page deux', '/second', false));
   }
 
+  getLogoURL(): string {
+
+    return 'assets/logo2.png';
+  }
 }
