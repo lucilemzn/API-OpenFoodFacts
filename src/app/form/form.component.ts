@@ -6,15 +6,19 @@ import { Contact } from '../classes/contact';
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
+
 export class FormComponent implements OnInit {
 
   @Output() addRequest = new EventEmitter<Contact>();
   contact: Contact;
+  info: string;
+
   constructor() { }
-
   ngOnInit(): void {
-    this.contact = new Contact(-1, '', '', '', 0, 0);
 
+    this.contact = new Contact(-1, '', '', '', 0, 0);
+    this.info = '';
   }
+
 
 }

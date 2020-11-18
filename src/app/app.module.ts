@@ -7,6 +7,7 @@ import { BodyComponent } from './body/body.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormComponent } from './form/form.component';
+import { AllergenComponent } from './allergen/allergen.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormComponent } from './form/form.component';
     BodyComponent,
     HeaderComponent,
     FooterComponent,
-    FormComponent
+    FormComponent,
+    AllergenComponent
   ],
   imports: [
     BrowserModule,
