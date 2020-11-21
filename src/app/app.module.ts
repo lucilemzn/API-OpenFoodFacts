@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormComponent } from './form/form.component';
 import { AllergenComponent } from './allergen/allergen.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AllergenComponent } from './allergen/allergen.component';
     HeaderComponent,
     FooterComponent,
     FormComponent,
-    AllergenComponent
+    AllergenComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

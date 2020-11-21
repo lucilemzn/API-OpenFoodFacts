@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="jumbotron">
     <div class="text-center">
     <h1>OPEN FOOD FACTS</h1>
@@ -21,3 +21,27 @@
   <img [src]="getLogoURL()" width="200" />
 </div>
 <div>
+ -->
+
+<header class="masthead mb-auto">
+  <div class="inner">
+    <h3 class="masthead-brand">
+      <img [src]="getLogoURL()" width="75" />
+    </h3>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="">Home</a>
+      </li>
+      <li class="nav-item" onclick="onAllergen()">
+        <a class="nav-link active" routerLink="Allergen">Allergen List</a>
+      </li>
+      <li class="nav-item" onclick="onContact()">
+        <a class="nav-link active" routerLink="Contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  </div>
+</header>
