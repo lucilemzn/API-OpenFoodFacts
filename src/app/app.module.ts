@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { FormComponent } from './form/form.component';
 import { AllergenComponent } from './allergen/allergen.component';
 import { ContactComponent } from './contact/contact.component';
+import { ApiService } from './api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,10 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSliderModule
+    MatSliderModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

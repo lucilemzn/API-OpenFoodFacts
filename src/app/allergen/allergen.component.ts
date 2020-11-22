@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllergenComponent implements OnInit {
 
-  constructor() { }
+  fetchedData: any = [];
+
+  constructor(private http: HttpClient) { }
+
 
   ngOnInit(): void {
+    this.http.get<any>('https://world.openfoodfacts.org/allergens.json').subscribe(data => {
+      this.fetchedData = data;
+      console.log(this.fetchedData);
+    });
   }
+
 
 }

@@ -1,1 +1,4 @@
-<p>allergen works!</p>
+<h3>List of allergen</h3>
+<div *ngFor="let item of fetchedData.tags">
+    <span>{{item?.name}}</span>
+</div>
