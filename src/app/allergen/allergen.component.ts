@@ -20,5 +20,5 @@ export class AllergenComponent implements OnInit {
     });
   }
 
-
 }
+

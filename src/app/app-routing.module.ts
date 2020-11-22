@@ -3,10 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { AllergenComponent } from './allergen/allergen.component';
 import { BodyComponent } from './body/body.component';
 import { ContactComponent } from './contact/contact.component';
+import { BrandComponent } from './brand/brand.component';
+import { IngredientComponent } from './ingredient/ingredient.component';
 
 const routes: Routes = [
   { path : '', component : BodyComponent},
-  { path : 'Allergen', component : AllergenComponent},
+  { path : 'Allergens', component : AllergenComponent},
+  { path : 'Brands', component : BrandComponent},
+  { path : 'Ingredients', component : IngredientComponent},
   { path : 'Contact', component : ContactComponent}
 ];
 

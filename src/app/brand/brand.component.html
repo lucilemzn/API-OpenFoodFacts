@@ -1,0 +1,21 @@
+<body>
+  <h3>List of brands</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Brands</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of brandData.tags">
+        <td>
+          {{item?.id}}
+        </td>
+        <td>
+          {{item?.name}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </body>

@@ -1,0 +1,21 @@
+<body>
+  <h3>List of ingredients</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Ingredients</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of ingreData.tags">
+        <td>
+          {{item?.id}}
+        </td>
+        <td>
+          {{item?.name}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </body>

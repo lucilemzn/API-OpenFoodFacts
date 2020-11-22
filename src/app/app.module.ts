@@ -11,6 +11,8 @@ import { AllergenComponent } from './allergen/allergen.component';
 import { ContactComponent } from './contact/contact.component';
 import { ApiService } from './api.service';
 import { HttpClientModule } from '@angular/common/http';
+import { BrandComponent } from './brand/brand.component';
+import { IngredientComponent } from './ingredient/ingredient.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     FormComponent,
     AllergenComponent,
-    ContactComponent
+    ContactComponent,
+    BrandComponent,
+    IngredientComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,21 @@
-<h3>List of allergen</h3>
-<div *ngFor="let item of fetchedData.tags">
-    <span>{{item?.name}}</span>
-</div>
+<body>
+<h3>List of allergens</h3>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Allergens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of fetchedData.tags">
+      <td>
+        {{item?.id}}
+      </td>
+      <td>
+        {{item?.name}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
