@@ -34,12 +34,12 @@ export class AllergenComponent implements OnInit {
   }
 
   filtre(data: Array<any>): Array<any> {
+    // tslint:disable-next-line: no-string-literal
     return data.filter(current => current['name'].substr(0, 2).toLowerCase() === 'fr');
   }
 
   getRandomData(data: Array<any>): Array<any> {
     return data[Math.floor(Math.random() * data.length)];
   }
-
 
 }
