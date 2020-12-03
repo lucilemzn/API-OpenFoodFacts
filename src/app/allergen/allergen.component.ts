@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators'
 
 @Component({
   selector: 'app-allergen',
@@ -10,6 +12,7 @@ export class AllergenComponent implements OnInit {
 
   fetchedData = [];
   filteredData = [];
+
   constructor(private http: HttpClient) { }
 
 
@@ -19,12 +22,11 @@ export class AllergenComponent implements OnInit {
       console.log(this.fetchedData);
       this.filteredData = this.filtre(this.fetchedData);
     });
-
   }
+
 
   filtre(data: Array<any>): Array<any> {
     return data.filter(current => current['name'].substr(0, 2).toLowerCase() === 'fr');
   }
-
 
 }

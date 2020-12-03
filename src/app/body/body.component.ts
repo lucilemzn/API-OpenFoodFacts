@@ -11,6 +11,14 @@ export class BodyComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  getLogoURL2(): string {
+
+    return 'assets/food.jpg';
+  }
+  getLogoURL3(): string {
+
+    return 'assets/foodban.jpg';
+  }
 
 
 }
