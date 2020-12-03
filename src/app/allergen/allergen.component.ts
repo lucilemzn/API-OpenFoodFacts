@@ -10,6 +10,8 @@ export class AllergenComponent implements OnInit {
 
   fetchedData = [];
   filteredData = [];
+  randomArray = [];
+
   constructor(private http: HttpClient) { }
 
 
@@ -18,12 +20,25 @@ export class AllergenComponent implements OnInit {
       this.fetchedData = data.tags;
       console.log(this.fetchedData);
       this.filteredData = this.filtre(this.fetchedData);
+      this.getFrenchRandomDataList(this.filteredData);
+      console.log(this.randomArray);
     });
 
   }
 
+
+  getFrenchRandomDataList(data: Array<any>){
+    for (let index = 0; index < 10; index++) {
+      this.randomArray[index] = this.getRandomData(data);
+    }
+  }
+
   filtre(data: Array<any>): Array<any> {
     return data.filter(current => current['name'].substr(0, 2).toLowerCase() === 'fr');
+  }
+
+  getRandomData(data: Array<any>): Array<any> {
+    return data[Math.floor(Math.random() * data.length)];
   }
 
 
