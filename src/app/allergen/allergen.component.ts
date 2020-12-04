@@ -12,10 +12,8 @@ export class AllergenComponent implements OnInit {
 
   fetchedData = [];
   filteredData = [];
-<<<<<<< HEAD
-=======
+
   randomArray = [];
->>>>>>> 71c5c3b1b68e03427dad65037541e79ecf570f13
 
   constructor(private http: HttpClient) { }
 
@@ -30,26 +28,20 @@ export class AllergenComponent implements OnInit {
     });
   }
 
-
-<<<<<<< HEAD
-=======
   getFrenchRandomDataList(data: Array<any>){
     for (let index = 0; index < 10; index++) {
       this.randomArray[index] = this.getRandomData(data);
     }
   }
 
->>>>>>> 71c5c3b1b68e03427dad65037541e79ecf570f13
+
   filtre(data: Array<any>): Array<any> {
     // tslint:disable-next-line: no-string-literal
     return data.filter(current => current['name'].substr(0, 2).toLowerCase() === 'fr');
   }
 
-<<<<<<< HEAD
-=======
   getRandomData(data: Array<any>): Array<any> {
     return data[Math.floor(Math.random() * data.length)];
   }
 
->>>>>>> 71c5c3b1b68e03427dad65037541e79ecf570f13
 }

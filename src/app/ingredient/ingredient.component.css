@@ -1,38 +1,46 @@
+@font-face{
+  font-family: "cofley";
+  src: url('src/police/cofley-thin.ttf') format("truetype");
+
+}
+
 h3 {
-  color: #111;
-  background-color: orange;
+  color: white;
+  background-color:rgb(63, 117, 58);
   font-size: 70px;
   letter-spacing: 5px;
   padding-bottom: 5px;
   padding-top: 5px;
-  }
-h3, th, td{
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1;
   text-align: center;
   font-weight: bold;
-}
-body{
-  margin: 10px;
-}
-th{
-  font-size: 20px;
-  letter-spacing: 2px;
-  padding-bottom: 15px;
-  padding-top: 5px;
+  }
 
-}
-
-td {
-  font-size: 15px;
-  line-height: 1;
+h2{
+  font-family: "georgia";
+  font-style: bold;
   text-align: center;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  border-style:inset;
-
+  margin-bottom:3%;
+}
+section{
+  width: 60%;
+  margin-left:20%;
+  margin-right:20%;
+  padding-bottom:5%;
+  background-color: white;
 }
 
-table{
-  width:100%
+div{
+  text-align: center;
+  font-family: "cofley";
+  margin-bottom: 1%;
+  font-size: 30px;
+}
+
+body {
+  margin-top:0;
+  width:100%;
+  padding-bottom:6%;
+  background-color: #95ca9c;
 }
