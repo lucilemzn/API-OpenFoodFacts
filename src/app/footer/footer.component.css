@@ -2,7 +2,8 @@
 footer{
   background-color:rgb(224, 224, 224);
   width:100%;
-  margin-top : -5%;
+  grid-row-start: 2;
+  grid-row-end: 3;
   position:relative;
   color: black;
   margin-bottom:-15px;
