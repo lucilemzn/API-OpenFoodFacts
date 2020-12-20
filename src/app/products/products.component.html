@@ -1,15 +1,13 @@
-<div class="container">
-  <div class="row justify-content-center">
-  <div class="col align-self-center">
+<body>
+  <h3>Choose your product</h3>
+
+  <section>
+    <h2>Enter your product !</h2>
+
+    <p> Vous avez besoin de connaître les ingrédients et les allergènes d'un produit ? Vous êtes au bon endroit ! Pour
+      cela il vous suffit d'entrer le nom du produit dans la barre de recherche. </p>
+
   <label>Enter your product :</label><input (ngModel)="name" placeholder="Ex: Milk ..." type="text">
-  <button type="button" class="btn btn-info" (click)="getRandomProductDetails(http)">Search</button>
-</div>
-<div class="col align-self-start">
-  <div class="card" style="width: 18rem;">
-          <div class="card-body"> <img src={{searchResult.product.image_front_url}}>
-            <h5 class="card-title">{{searchResult}}</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <!--<button type="button" class="btn btn-info" (click)="getRandomProductDetails(http)">Search</button>-->
+</section>
+</body>
