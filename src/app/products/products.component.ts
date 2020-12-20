@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,18 +8,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  name: string;
+  name: any;
   searchResult: any;
-  constructor(private http: HttpClient) { }
+  myRandomProduct: any;
+  headerDict = {
+    'UserAgent': 'FunIsenProject - Windows - Version 1.0 - localhost:4200/Products'
+  };
+  requestOptions = {
+    headers: new HttpHeaders(this.headerDict),
+  };
+  constructor( http: HttpClient) { }
 
-  getProductFromInput(http: HttpClient): void{
-    this.http
-    .get<any>('https://us.openfoodfacts.org/cgi/search.pl?action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=' + name + '&tagtype_1=nutrition_grades&tag_contains_1=contains&tag_1=A&additives=without&ingredients_from_palm_oil=without&json=true')
+  getRandomProductDetails(http: HttpClient){
+    this.myRandomProduct = this.getRandomProduct();
+    console.log(this.myRandomProduct);
+    http.get('https://world.openfoodfacts.org/api/v0/product/0${this.myRandomProduct}.json')
     .subscribe(
       (data) => {
-        this.searchResult = data;
+        if(data == HttpErrorResponse){
+          console.log(data);
+        }else{
+          this.searchResult = data;
+          console.log(this.searchResult)
+          console.log(this.searchResult.product.image_front_url)
+        }
       }
     );
+  }
+
+  getRandomProduct() {
+    return Math.floor(Math.random() * 1000000000000);
   }
 
   ngOnInit(): void {

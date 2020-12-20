@@ -19,6 +19,13 @@ export class BodyComponent implements OnInit {
 
     return 'assets/foodban.jpg';
   }
+  getLogoURL4(): string {
 
+    return 'assets/food.jpg';
+  }
+  getLogoURL5(): string {
+
+    return 'assets/food2.jpg';
+  }
 
 }
