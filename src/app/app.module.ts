@@ -13,6 +13,7 @@ import { ApiService } from './api.service';
 import { HttpClientModule } from '@angular/common/http';
 import { BrandComponent } from './brand/brand.component';
 import { IngredientComponent } from './ingredient/ingredient.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { IngredientComponent } from './ingredient/ingredient.component';
     AllergenComponent,
     ContactComponent,
     BrandComponent,
-    IngredientComponent
+    IngredientComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
