@@ -1,7 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators'
 
 @Component({
   selector: 'app-allergen',
@@ -21,10 +19,8 @@ export class AllergenComponent implements OnInit {
   ngOnInit(): void {
     this.http.get<any>('https://world.openfoodfacts.org/allergens.json').subscribe(data => {
       this.fetchedData = data.tags;
-      console.log(this.fetchedData);
       this.filteredData = this.filtre(this.fetchedData);
       this.getFrenchRandomDataList(this.filteredData);
-      console.log(this.randomArray);
     });
   }
 
