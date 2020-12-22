@@ -1,0 +1,13 @@
+<body>
+  <h3>List of allergens</h3>
+
+  <section>
+  <h2>Details</h2>
+
+  <div *ngFor="let item of randomArray">
+    {{item.name.replace('fr:', '')}}
+  </div>
+  <a class="nav-link active" routerLink="Allergendet">Details</a>
+
+  </section>
+  </body>

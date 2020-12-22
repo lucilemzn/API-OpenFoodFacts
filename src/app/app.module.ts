@@ -14,6 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrandComponent } from './brand/brand.component';
 import { IngredientComponent } from './ingredient/ingredient.component';
 import { ProductsComponent } from './products/products.component';
+import { IngredientdetComponent } from './ingredientdet/ingredientdet.component';
+import { AllergendetComponent } from './allergendet/allergendet.component';
+import { BranddetComponent } from './branddet/branddet.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ProductsComponent } from './products/products.component';
     ContactComponent,
     BrandComponent,
     IngredientComponent,
-    ProductsComponent
+    ProductsComponent,
+    IngredientdetComponent,
+    AllergendetComponent,
+    BranddetComponent
   ],
   imports: [
     BrowserModule,

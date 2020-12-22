@@ -1,14 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-
-
 @Component({
-  selector: 'app-ingredient',
-  templateUrl: './ingredient.component.html',
-  styleUrls: ['./ingredient.component.css']
+  selector: 'app-ingredientdet',
+  templateUrl: './ingredientdet.component.html',
+  styleUrls: ['./ingredientdet.component.css']
 })
-export class IngredientComponent implements OnInit {
+export class IngredientdetComponent implements OnInit {
 
   ingreData: any = [];
   filteredIngData = [];
@@ -27,7 +25,7 @@ export class IngredientComponent implements OnInit {
 
 
   getFrenchRandomDataList(data: Array<any>){
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < 50; index++) {
       this.randomArray[index] = this.getRandomData(data);
     }
   }
@@ -39,6 +37,4 @@ export class IngredientComponent implements OnInit {
   getRandomData(data: Array<any>): Array<any> {
     return data[Math.floor(Math.random() * data.length)];
   }
-
-
 }
