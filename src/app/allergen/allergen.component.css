@@ -44,3 +44,9 @@ body {
   padding-bottom:1%;
   background-color: #ff7676;
 }
+
+p{
+  text-align:center;
+  margin :5%;
+  font-family:"cofley";
+}
