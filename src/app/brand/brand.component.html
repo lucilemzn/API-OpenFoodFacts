@@ -1,12 +1,11 @@
 <body>
-  <h3>List of brands</h3>
+  <h3>BRANDS</h3>
 
-<section>
-  <h2>Top 10 favourite brands in the world</h2>
-  <p>(just wait 5 secondes)</p>
-  <div *ngFor="let item of randomArray">
-    {{item.name}}
-  </div>
-  <a class="nav-link active" routerLink="/Branddet">Details</a>
+  <section>
+    <h2>Top 10 of the french's favourite brands</h2>
+    <div *ngFor="let item of randomArray">
+      {{item.name}}
+    </div>
+    <li class="nav-link active" routerLink="/Branddet">See More</li>
   </section>
-  </body>
+</body>

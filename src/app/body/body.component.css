@@ -5,7 +5,6 @@
 
 }
 
-
 .red{
   color: red;
   text-decoration: underline;
@@ -26,19 +25,21 @@ h1{
   margin-bottom:-8%;
   text-align:center;
   font-family: "cofley";
+  background-color:rgb(250, 250, 250);
 }
 body {
-  margin-top:0;
+
   width:100%;
 
   background-color: #8cb68c;
   position:relative;
 }
 section{
-  background-color: rgb(250, 250, 250);;
+  background-color: rgb(250, 250, 250);
   width:1200px;
   margin-left:10%;
   margin-right:10%;
+  margin-top: 45px;
 
 }
 

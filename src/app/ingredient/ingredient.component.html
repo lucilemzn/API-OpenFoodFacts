@@ -1,13 +1,11 @@
 <body>
-  <h3>List of Ingredients</h3>
+  <h3>INGREDIENTS</h3>
 
-<section>
-  <h2>Top 10 favourite ingredients in the world</h2>
-  <p>(just wait 5 secondes)</p>
-  <div *ngFor="let item of randomArray">
-    {{item.name.replace('fr:', '')}}
-  </div>
-  <a class="nav-link active" routerLink="/Ingredientdet">Details</a>
-
+  <section>
+    <h2>Top 10 of the french's favourite ingredients</h2>
+    <div *ngFor="let item of randomArray">
+      {{item.name.replace('fr:', '')}}
+    </div>
+    <li class="nav-link active" routerLink="/Ingredientdet">See more</li>
   </section>
-  </body>
+</body>

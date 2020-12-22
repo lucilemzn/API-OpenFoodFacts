@@ -13,15 +13,26 @@ export class AllergenComponent implements OnInit {
 
   randomArray = [];
 
+  dataLoading: Boolean;
+  dataLoaded: Boolean;
+
   constructor(private http: HttpClient) { }
 
 
   ngOnInit(): void {
+    this.dataLoading = true;
+    this.dataLoaded = false;
     this.http.get<any>('https://world.openfoodfacts.org/allergens.json').subscribe(data => {
       this.fetchedData = data.tags;
       this.filteredData = this.filtre(this.fetchedData);
       this.getFrenchRandomDataList(this.filteredData);
     });
+
+    while(this.randomArray == null){
+      console.log(this.dataLoading)
+    }
+    this.dataLoading = false;
+    this.dataLoaded = true;
   }
 
   getFrenchRandomDataList(data: Array<any>){

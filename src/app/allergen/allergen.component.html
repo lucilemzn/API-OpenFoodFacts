@@ -1,13 +1,11 @@
 <body>
-<h3>List of allergens</h3>
+  <h3>ALLERGENS</h3>
 
-<section>
-<h2>The 10 allergens that affect the French the most this year</h2>
-<p>(just wait 5 secondes)</p>
-<div *ngFor="let item of randomArray">
-  {{item.name.replace('fr:', '')}}
-</div>
-<a class="nav-link active" routerLink="/Allergendet">Details</a>
-
-</section>
+  <section>
+    <h2>Top 10 of allergens who affects the most the french</h2>
+    <div *ngFor="let item of randomArray">
+      {{item.name.replace('fr:', '')}}
+    </div>
+    <li class="nav-link active" routerLink="/Allergendet">See More</li>
+  </section>
 </body>

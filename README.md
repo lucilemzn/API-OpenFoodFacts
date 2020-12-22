@@ -1,28 +1,15 @@
-# APIProject
+PROJET DE TECHNO WEB ISEN 4
+-> Rendu le 22 décembre 2020.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+I) PROJECT DESCRIPTION
+Nous avons crée un site avec une API sur la nourriture. 
+Sur le site il est possible d'afficher le top 10 des allergenes, des plus grandes marques de consommation et des ingredients les plus appreciés des français. Il est également possible d'afficher plus de produits.
+Nous avons également voulu permettre à l'utiisateur de rechercher un produit et d'afficher par la suite quelques informations dessus mais notre API ne nous permet de le faire.
 
-## Development server
+II) HOW TO USE IT
+Rien de compliquer il suffit de cliquer sur les onglets et sur les boutons pour effectuer des actions. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+III) HOW TO INSTALL IT
+Quand vous clonez la branche master sur github il suffit ensuite de rentrer ces lignes de code dans votre terminal : "npm install --save-dev @angular-devkit/build-angular", "ng serve" puis d'aller sur "http://localhost:4200" dans Firefox ou GoogleChrome.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
+Membre du groupe pour ce projet : Marion Klein, Canelle Liautaud et Lucile Manzoni.

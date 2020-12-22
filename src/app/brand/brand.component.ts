@@ -11,6 +11,8 @@ export class BrandComponent implements OnInit {
   brandData: any = [];
   randomArray = [];
 
+  clicked = false;
+
   constructor(private http: HttpClient) { }
 
 
@@ -30,5 +32,4 @@ export class BrandComponent implements OnInit {
   getRandomData(data: Array<any>): Array<any> {
     return data[Math.floor(Math.random() * data.length)];
   }
-
 }
